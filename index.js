@@ -5,15 +5,15 @@ const changeProposal = (capital) => {
         let newText = '';
   
         for (let i = 0; i < word.length; i++) {
-            const symbol = word[i];
+            const letter = word[i];
 
             const position = (i + 1) % 2 === 0;
   
             if ((divisibility === 'чётный' && position) || 
             (divisibility === 'нечётный' && !position)) {
-                newText += symbol.toUpperCase();  
+                newText += letter.toUpperCase();  
             } else {
-                newText += symbol; 
+                newText += letter; 
             }
         }
     result.push(newText);
